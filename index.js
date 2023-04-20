@@ -17,7 +17,7 @@ client.once(Events.ClientReady, c => {
 client.on('messageCreate', async (message) => {
     try {
     if (message.author.bot) return;
-    if (message.channel.id === '1094922165620584510') return;
+    if (message.channel.id === 'Put desired channel ID here.') return;
     if (message.content === undefined) return;
     if (message.content.startsWith('!')) return;
         
