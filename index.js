@@ -1,3 +1,4 @@
+const { token } = require('./config.json');
 const {Client, Events, GatewayIntentBits} = require('discord.js');
 const axios = require('axios');
 
@@ -37,4 +38,4 @@ client.on('messageCreate', async (message) => {
     }
 });
 
-client.login()
+client.login(token)
