@@ -1,5 +1,5 @@
 const { token } = require('./config.json');
-const {Client, Events, GatewayIntentBits} = require('discord.js');
+const { Client, Events, GatewayIntentBits } = require('discord.js');
 const axios = require('axios');
 
 const client = new Client({
