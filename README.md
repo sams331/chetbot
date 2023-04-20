@@ -1,4 +1,4 @@
-## Chetbot
+# Chetbot
 
 Chetbot is a simple chatbot system developed by sams331 (me). Chetbot is very simple, it just takes an API request and send it to your desired server. Chetbot is made in DJS (discord.js), so it's pretty accessible.
 
