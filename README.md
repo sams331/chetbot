@@ -13,4 +13,5 @@ If you want to use Chetbot, you have to make a Brainshop API. To make it, there 
 ## Required packages:
 - discord.js
 - axios
+
 All of them were accessible in NPM.
