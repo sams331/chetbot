@@ -9,3 +9,8 @@ Chetbot is a simple chatbot system developed by sams331 (me). Chetbot is very si
 
 ## Things to do:
 If you want to use Chetbot, you have to make a Brainshop API. To make it, there are a lot of YouTube tutorials on it. And then, just use [the code](https://github.com/sams331/chetbot) I provided.
+
+## Required packages:
+- discord.js
+- axios
+All of them were accessible in NPM.
