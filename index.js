@@ -22,7 +22,7 @@ client.on('messageCreate', async (message) => {
     if (message.content.startsWith('!')) return;
         
     let getOutput = async () => {
-        let response = await axios.get(`http://api.brainshop.ai/get?bid=123456&key=abcdefg&uid=${message.author.id}&msg=${message.content}`) // the site is an example. Please use a valid Brainshop API site for it to work.
+        let response = await axios.get(`http://api.brainshop.ai/get?bid=(BID HERE)&key=(KEY HERE)&uid=${message.author.id}&msg=${message.content}`) // the URI is an example. Please use a valid Brainshop API URI for it to work.
         let output = response.data
         return output
     }
