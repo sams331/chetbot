@@ -21,17 +21,10 @@ client.on('messageCreate', async (message) => {
     if (message.content === undefined) return;
     if (message.content.startsWith('!')) return;
         
-    let getOutput = async () => {
-        let response = await axios.get(`http://api.brainshop.ai/get?bid=(BID HERE)&key=(KEY HERE)&uid=${message.author.id}&msg=${message.content}`) // the URI is an example. Please use a valid Brainshop API URI for it to work.
-        let output = response.data
-        return output
-    }
-    let outputValue = await getOutput()
-    console.log(outputValue)
-    
-    await message.channel.sendTyping()
-    
-    message.reply({content: `${outputValue.cnt}`})
+    await axios(`http://api.brainshop.ai/get?bid=(BID HERE)&key=(KEY HERE)&uid=${message.author.id}&msg=${message.content}`).then(r => {
+    let data = r.data
+    message.reply(data.cnt)
+    })
     } catch (e) {
         message.reply({content: "Something went wrong. Try again later."})
         console.log(e)
